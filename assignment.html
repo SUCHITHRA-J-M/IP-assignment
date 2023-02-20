@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Array</h1>
+<h2>The concat() Method</h2>
+
+<p>The concat() method concatenates (joins) two or more arrays:</p>
+
+<p id="xyz"></p>
+
+<script>
+const arr1 = ["Johnny", "Ann"];
+const arr2 = ["Rose", "Luna", "Jack"];
+const arr3 = ["Robin"];
+
+const children = arr1.concat(arr2, arr3); 
+document.getElementById("xyz").innerHTML = children;
+</script>
+
+<h2>The indexOf() Method</h2>
+
+<p>indexOf() returns the position of a specified value in an array:</p>
+<p id="ind"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let index = fruits.indexOf("Apple");
+
+document.getElementById("ind").innerHTML = index;
+</script>
+
+<h2>The length Property</h2>
+
+<p>The length property sets or returns the number of elements in an array.</p>
+
+<p id="demo"></p>
+
+<script>
+const berry = ["Blueberries","Strawberries",
+"Gojiberries","Mulberries"];
+let length =  berry.length;
+
+document.getElementById("demo").innerHTML = length;
+</script>
+
+<h2>slice() array method</h2>
+
+<p>Array.slice() returns selected array elements as a new array.</p>
+
+<p id="slicedemo"></p>
+
+<script>
+const fruit = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruit.slice(1, 3);
+
+document.getElementById("slicedemo").innerHTML = citrus;
+</script>
+
+<h2>Reverse Array method</h2>
+
+<p>The Array.reverse() method reverses the order of the elements in an array.</p>
+
+<p id="rev"></p>
+
+<script>
+const flowers = ["rose", "lotus", "jasmine", "sunflower", "daisy"];
+document.getElementById("rev").innerHTML = flowers.reverse();
+</script>
+<h2>The shift() Method</h2>
+
+<p>shift() removes the first item of an array</p>
+
+<p id="shift"></p>
+
+<script>
+const flower = ["rose", "lotus", "jasmine", "sunflower", "daisy"];
+flower.shift();
+
+document.getElementById("shift").innerHTML = flower;
+</script>
+<h2>The includes() Method</h2>
+
+<p>includes() returns true if an array contains a specified element</p>
+
+<p id="include"></p>
+
+<script>
+const berries = ["Blueberries","Strawberries",
+"Gojiberries","Mulberries"];
+document.getElementById("include").innerHTML = berries.includes("Raspberries");
+</script>
+</body>
+</html>
